@@ -1,0 +1,710 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/******************NAVBAR**************/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e4e3e3;
+    height: 50px;
+    max-width: 100%; /* O el ancho que necesites */
+    text-transform: uppercase;
+   
+}
+
+
+.navbar__inicio{
+    width: 50%; /* Cada hijo toma la mitad del padre */
+    padding: 9px;
+       
+}
+
+.navbar__links {
+    padding-left: 10px;
+    
+    
+}
+
+.navbar__link{
+    margin: 7px;
+    text-decoration: none;
+    color: #a35f05;
+}
+
+.navbar__link:hover {
+    color:#d1b78f;
+}
+
+
+/****************ELEMENTOS PRINCIPALES**************/
+
+
+
+
+/********PRODUCTOS***************/
+.temporada__principal {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* Centra todo verticalmente */
+    padding: 50px 0; /* Espaciado superior e inferior */
+    background-color: #F5F5F5; 
+}
+
+.seccion__temporada {
+    display: flex;
+    max-width: 1200px; /* Ajusta el ancho máximo */
+    width: 90%; /* Que se adapte al tamaño de la pantalla */
+}
+
+.contenido__temporada {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Espaciado entre texto e imagen */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden si la pantalla es pequeña */
+    gap: 40px; /* Espacio entre el texto y la imagen */
+}
+
+.titulo__temporada{
+    font-size: 50px;
+    color: #a35f05;
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto__temporada {
+    flex: 1; /* Permite que el texto ocupe el espacio necesario */
+    text-align: left; /* Alineación del texto */
+    text-align: justify;
+}
+
+.img__temporada {
+    max-width: 400px; /* Tamaño máximo de la imagen */
+    width: 100%; /* Se adapta al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; 
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
+
+
+
+
+
+/****************NOSOTROS*******************************************************/
+
+.nosotros{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    margin-top: 30px;
+
+}
+
+.titulo__nosotros{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #a35f05;;
+}
+
+.texto__nosotros{
+    text-align: justify;
+}
+
+.boton__nosotros{
+    padding: 15px 25px 15px 25px;
+    background-color: #76461b;
+    color: white;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.boton__nosotros:hover{
+    color: #a35f05;
+    background-color: #d1b78f;
+}
+
+
+
+/* CONTENEDOR CARDS*/
+
+
+.content__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento lateral */
+}
+
+.posicionamiento__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
+    flex-direction: row;
+}
+
+.block__izq {
+    display: flex;
+    flex: 1;
+    background-color: #ad9474;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__block{
+    max-width: 80%;
+    padding: 10px;
+    text-align: justify;
+
+}
+
+.block__der{
+    display: flex;
+    flex: 1;
+    height: 600px;
+    background-color: #ad9474;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__block {
+    width: 100%; /* Se adapta al tamaño del contenedor */
+    max-width: 600px; /* Establece un límite máximo */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+.block__title{
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #875101d2;    
+}
+
+/*********SLIDES CARROUSEL *******************************/
+
+
+.container-carrusel{
+    display: flex;
+    margin-top: 5em;
+}
+
+
+.carousel {
+    width: 500px;
+    height: 570px;
+    overflow: hidden;
+    position: relative;
+    margin: 30px  0px 30px 30px;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* Ocultamos los inputs */
+input[type="radio"] {
+    display: none;
+}
+
+/* Mueve el carrusel al seleccionar un input */
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+/****************************/
+#slide4:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide5:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide6:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+/**************************/
+#slide7:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide8:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide9:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+
+/* Navegación con puntos */
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.navigation label {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .slides + .navigation label {
+    background: #333;
+}
+
+
+/**SECCION DE FORM CON IMAGEN*********/
+.contenedor__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin-bottom: 40px;
+    margin-top: 90px;
+    background-color:#e4e3e3;
+}
+
+.layout__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px 0px #ababab;
+    color: #ad9474;
+}
+
+.img__form{
+    width: 270px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+li {
+    margin: 30px;
+}
+
+textarea{
+    padding: 7px;
+    border-radius: 20px;
+    margin-top: 4px;
+    height: 39px;
+    width: 100%;
+    border-width: 1px;
+    border-color: #ad9474;
+}
+
+
+input, text {
+    padding: 7px;
+    border-radius: 20px;
+    margin-top: 4px;
+    height: 29px;
+    width: 100%;
+    border-width: 1px;
+    border-color: #ad9474;
+}
+
+ul {
+    width: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.boton__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ad9474;
+    width: 25%;
+    height: 30px;
+    margin-left: 30px;
+    margin-bottom: 9px;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+
+/*****************SECCION DE CARD CON IMG**************************/
+
+.contenedor__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.layout__card{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    background-color:rgb(173, 148, 116, 0.3);
+    padding: 20px 0px;
+    margin: 20px 40px 20px 20px;
+    box-shadow: 0px 9px 9px 0px rgb(171, 171, 171, 0.3);
+    border-radius: 15px;
+}
+
+.text__card{
+    text-align: justify;
+    padding: 5px 12px;
+    width:270px;
+}
+
+.img__card {
+    width: 300px; /* Ajusta la imagen a tu gusto */
+    object-fit: cover; /* Para mantener la proporción */
+    border-radius: 15px;
+    margin-right: 8px;
+}
+
+
+.button__card{
+    margin-top: 6px;
+    padding: 12px 25px 15px 25px;
+    background-color: #76461b;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+
+/*********FOOTER***************/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.botonFooter{
+    margin-top: 10px;
+    height: 30px;
+    width: 8em;
+    border-style: none;
+    background-color: #ad9474;
+    border-radius: 20px;
+    color: white;
+}
+
+/*************************************************/
+/*************QUERIES****************************/
+
+/* 1400 */
+@media (max-width: 1400px) {
+    .nosotros{
+        margin: 20px 50px 5px ;
+    }
+
+    .text__block {
+        font-size: 14px;
+        padding: 25px;
+    }
+
+}
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .text__block{
+        font-size: 13px;
+        padding-bottom: 25px;
+    }
+
+
+    .contenedor__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Mejor usa auto para que se ajuste según el contenido */
+        flex-direction: column;
+        gap: 20px; /* Añade separación entre las tarjetas */
+        padding: 20px; /* Para que no queden pegadas al borde */
+    }
+
+
+    .layout__card {
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        height: auto;
+        background-color: rgb(173, 148, 116, 0.3);
+        box-shadow: 0px 9px 9px 0px rgb(171, 171, 171, 0.3);
+        border-radius: 15px;
+       
+    }
+
+    .position__text {
+        flex: 1; /* Permite que el texto ocupe todo el espacio sobrante */
+        max-width: 100%; /* Que nunca se limite el ancho */
+        padding: 15px; 
+    }
+
+    .img__card {
+        width: 300px; /* Tamaño fijo para la imagen */
+        object-fit: cover; /* Mantiene la proporción de la imagen */
+        padding: 8px;
+    }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+    .navbar__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .contenido__temporada {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo__temporada {
+        font-size: 30px;
+    }
+
+    .texto__temporada {
+        font-size: 17px;
+    }
+
+    .nosotros {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        margin-top: 30px;
+    }
+
+
+    .posicionamiento__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+   
+    .block__izq {
+        display: flex;
+        flex: 1;
+        background-color: #efeae3;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text__block{
+        font-size: 12px;
+        padding-bottom: 25px;
+    }
+
+    .img__block {
+        max-width: 80%;
+        height: 80%;
+    }
+
+    .container-carrusel {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text__block{
+        font-size: 18px;
+        padding-bottom: 25px;
+    }
+
+   
+}
+
+   
+
+
+/* 768px */
+@media (max-width: 768px) {
+    .texto__temporada{
+        font-size: 12px;
+    }
+
+    .layout__form {
+        max-width: 90%;
+    }
+
+    .img__form {
+        display: none;
+    }
+
+    .img__card {
+        display: none;
+    }
+
+    
+    .text__card{
+        padding: 0px 20px;
+    }
+
+    .text__block{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+/* 576px */
+@media (max-width: 576px) {
+    .navbar__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    .nosotros {
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 60px 0px 60px;
+        margin-top: 10px;
+    }
+
+    .titulo__nosotros {
+        padding-bottom: 6px;
+    }
+
+    .texto__nosotros {
+        font-size: 14px;
+    }
+
+    .text__block{
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+
+    .text__card{
+        padding: 0px 20px;
+    }
+
+    .footer-section li {
+        display: flex;
+        
+    }
+
+   
+   
+}
+
+/* 380px */
+@media (max-width: 380px) {
+    .nosotros {
+        height: 920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem;
+        margin-top: 10px;
+    }
+
+    .texto__nosotros {
+        height: 950px;
+        font-size: 9px;
+    }
+}
