@@ -745,6 +745,15 @@ h6{
 
 /* 768px */
 @media (max-width: 768px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 60px 60px 0px 60px;
+        margin-top: 10px;
+    }
+
     .texto__temporada{
         font-size: 12px;
     }
@@ -771,7 +780,7 @@ h6{
         padding-bottom: 20px;
     }
 
-    /* tendencias */
+    /* tendencias pagina*/
     .temporada__tendencias {
         display: flex;
         justify-content: center;
@@ -781,31 +790,30 @@ h6{
         flex-direction: column
     }
 
-    .bloque__tendencias {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: justify;
-        height: auto;
-        width: 90%;
-        margin: 10px;
-        padding: 25px;
-        font-size: 25px;
-    }
-
+    
     .boho__imagenes{
         display: flex;
         flex-direction: column;
         
     }
 
-    .bloque__der{
-        width: 500px;
+
+    .bloque__tendencias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        height: auto;
+        /* width: 90%; */
+        margin: 10px;
+        /* padding: 25px; */
+        font-size: 25px;
     }
    
-
 }
 
+/* 576 */
+@media (max-width: 576px)  {
     .navbar__links {
         display: flex;
         align-items: center;
@@ -814,10 +822,10 @@ h6{
     }
 
     .nosotros {
-        height: 580px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
         padding: 60px 60px 0px 60px;
         margin-top: 10px;
     }
@@ -843,15 +851,11 @@ h6{
         display: flex;
         
     }
-
-    /* TENDENCIAS */
-   
-
    
 }
 
 /* 380px */
-@media (max-width: 380px) {
+@media (max-width: 375px) {
     .nosotros {
         height: 920px;
         display: flex;
@@ -865,4 +869,15 @@ h6{
         height: 950px;
         font-size: 9px;
     }
+
+    /**/
+    .bloque__texto{
+        padding: 20px 10px;
+        text-align: justify;
+        font-size: 25px;
+        line-height: 1;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
 }
