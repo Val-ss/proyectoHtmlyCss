@@ -51,10 +51,6 @@ html, body {
 
 
 /****************ELEMENTOS PRINCIPALES**************/
-
-
-
-
 .temporada__principal {
     width: 100%;
     display: flex;
@@ -144,8 +140,6 @@ html, body {
 
 
 /* CONTENEDOR CARDS*/
-
-
 .content__block {
     display: flex;
     flex-direction: column;
@@ -827,7 +821,16 @@ h6{
 
 /* 375px */
 @media (max-width: 375px) {
-   
+    .nosotros{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        margin-top: 30px;
+    
+    }
+
 
     /**/
     .bloque__texto{
