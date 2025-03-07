@@ -20,7 +20,7 @@ html, body {
     align-items: center;
     justify-content: space-around;
     background-color: #e4e3e3;
-    height: 50px;
+    height: 70px;
     max-width: 100%; /* O el ancho que necesites */
     text-transform: uppercase;
    
@@ -108,11 +108,11 @@ html, body {
 /****************NOSOTROS*******************************************************/
 
 .nosotros{
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
     margin-top: 30px;
 
 }
@@ -128,12 +128,13 @@ html, body {
 }
 
 .boton__nosotros{
-    padding: 15px 25px 15px 25px;
+    padding: 10px 25px ;
     background-color: #76461b;
     color: white;
     border-style: none;
     border-radius: 50px;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 .boton__nosotros:hover{
@@ -521,6 +522,89 @@ ul {
     padding: 6px;
     text-align: justify;
 }
+
+/**********************/
+/* PAGINA TENDENCIAS */
+
+.temporada__tendencias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.subtitulo__tendencia {
+    text-align: center; 
+    padding: 10px; 
+}
+
+.titulo_tendencia{
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0px 50px;
+}
+
+.texto__tendencia{
+    padding: 10px 50px;
+    text-align: center;
+    line-height: 2;
+}
+/**/
+
+.bloque__tendencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.bloque__der{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    margin: 10px;
+    padding: 25px;
+    font-size: 25px;
+}
+
+h6{
+    color: #a35f05;
+    font-size: 45px;
+    text-align:start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bloque__texto{
+    padding: 20px 10px;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.boho__imagenes{
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.boho__img{
+    max-height: 700px;
+    margin: 9px;
+}
+
+
+
+
 /*************************************************/
 /*************QUERIES****************************/
 
@@ -687,6 +771,38 @@ ul {
         padding-bottom: 20px;
     }
 
+    /* tendencias */
+    .temporada__tendencias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        flex-direction: column
+    }
+
+    .bloque__tendencias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        height: auto;
+        width: 90%;
+        margin: 10px;
+        padding: 25px;
+        font-size: 25px;
+    }
+
+    .boho__imagenes{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .bloque__der{
+        width: 500px;
+    }
+   
 
 }
 
@@ -730,7 +846,9 @@ ul {
         
     }
 
+    /* TENDENCIAS */
    
+
    
 }
 
