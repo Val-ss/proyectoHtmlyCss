@@ -806,8 +806,6 @@ h6{
 
 }
 
-/* 576px */
-@media (max-width: 576px) {
     .navbar__links {
         display: flex;
         align-items: center;
