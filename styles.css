@@ -55,7 +55,6 @@ html, body {
 
 
 
-/********PRODUCTOS***************/
 .temporada__principal {
     width: 100%;
     display: flex;
@@ -108,7 +107,7 @@ html, body {
 /****************NOSOTROS*******************************************************/
 
 .nosotros{
-    height: 700px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -610,9 +609,7 @@ h6{
 
 /* 1400 */
 @media (max-width: 1400px) {
-    .nosotros{
-        margin: 20px 50px 5px ;
-    }
+   
 
     .text__block {
         font-size: 14px;
@@ -673,6 +670,7 @@ h6{
         font-size: 13px;
     }
 
+    /**/
     .contenido__temporada {
         display: flex;
         align-items: center;
@@ -687,16 +685,7 @@ h6{
         font-size: 17px;
     }
 
-    .nosotros {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px;
-        margin-top: 30px;
-    }
-
-
+   /**/
     .posicionamiento__block {
         display: flex;
         align-items: center;
@@ -726,16 +715,14 @@ h6{
         height: 80%;
     }
 
+    /**/
     .container-carrusel {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .text__block{
-        font-size: 18px;
-        padding-bottom: 25px;
-    }
+   
 
    
 }
@@ -745,15 +732,6 @@ h6{
 
 /* 768px */
 @media (max-width: 768px) {
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 60px 60px 0px 60px;
-        margin-top: 10px;
-    }
-
     .texto__temporada{
         font-size: 12px;
     }
@@ -821,32 +799,25 @@ h6{
         font-size: 10px;
     }
 
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 60px 60px 0px 60px;
-        margin-top: 10px;
-    }
-
+    
+    /**/
     .titulo__nosotros {
         padding-bottom: 6px;
     }
 
-    .texto__nosotros {
-        font-size: 14px;
-    }
 
+    /**/
     .text__block{
         font-size: 13px;
         padding-bottom: 10px;
     }
 
+    /**/
     .text__card{
         padding: 0px 20px;
     }
 
+    /**/
     .footer-section li {
         display: flex;
         
@@ -854,30 +825,18 @@ h6{
    
 }
 
-/* 380px */
+/* 375px */
 @media (max-width: 375px) {
-    .nosotros {
-        height: 920px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5rem;
-        margin-top: 10px;
-    }
-
-    .texto__nosotros {
-        height: 950px;
-        font-size: 9px;
-    }
+   
 
     /**/
     .bloque__texto{
         padding: 20px 10px;
         text-align: justify;
-        font-size: 25px;
-        line-height: 1;
+        font-size: 9px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
 
 }
+
